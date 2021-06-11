@@ -1,0 +1,14 @@
+#si se ingresa 8 que se muestre 2,3,5,7
+import random
+r=random.randrange(1, 1000)
+print(r)
+for i in range(2,r+1):
+        s=2
+        imo=True
+        while imo and s<i:
+            if i % s ==0 :
+                imo=False
+            else:
+                s +=1
+        if imo:
+            print(i,end=",")
